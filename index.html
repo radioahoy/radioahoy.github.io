@@ -1,20 +1,22 @@
 <html>
     <head>
-        <title>Radio Ahoy (Handcode) build 1.002</title>
+        <title>Radio Ahoy build 1.002</title>
 
 
 
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
-
-.body{
-    background-color: #80FFD3;
-    padding:50px;
+body{
+  background-size: cover;
+        height: 100vh;
+        font-family: 'Rubik';font-size: 16px;
+    background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
 }
 
 .ahoyRadioContainer {
-  font-family: arial;
+  font-family: rubik;
   font-size: 24px;
   margin: 25px;
   width: 350px;
@@ -25,9 +27,9 @@
    /*-- Outer Box CSS --*/
    .outerBox {
     height: 60vh;
-    background: #000000;
+    background: #00000000;
     padding: 0 20px;
-    margin: 100px 50px 20px;
+    margin: 50px 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +39,9 @@
 
 /*-- Inner Box CSS --*/
 .innerBox {
-    background: #05C3DD;
-    box-shadow: 0px 0px 6px 0px #a5a5a5;
-    border-radius: 5px;
+    background: #05c4dd03;
+    box-shadow: 0px 0px 6px 0px #0dffdf;
+    border-radius: 10px;
     padding: 30px;
     font-size: 20px;
     text-align: center;
@@ -146,8 +148,31 @@ img:hover {
             text-transform: uppercase;
 }
 
+.superFontBig {
+    font-weight: 300;
+    font-size: 32px;
+    font-family: rubik;
+    color:rgba(255, 255, 255, 0.707);
+    text-transform: uppercase;
 
+}
 
+.superFontLink {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: rubik;
+    color:rgba(255, 255, 255, 0.219);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    border: 1px;
+    border-color:white;
+
+}
+
+.superFontLink:hover{
+  color:white;
+}
 
 
 </style>      
@@ -158,14 +183,13 @@ img:hover {
 
     </head>
     <body>
-       <h1>Radio Ahoy - build 1.0.2 </h1> 
+
 
 <section>
 
     <div class="outerBox">
 
-        <div class="innerBox">
-            <script src="https://embed.radio.co/player/142a6d9.js"></script>
+        <div class="innerBox"><script src="https://embed.radio.co/player/142a6d9.js"></script>
         </div>
 
     </div>
@@ -197,7 +221,7 @@ img:hover {
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
-            <a target="_blank" href="https://www.ahoy.ooo">
+            <a target="_blank" href="https://app.ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
 
@@ -230,7 +254,8 @@ img:hover {
             
 <br>
         
-            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 2.0.1
+            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 2.0.1 <br>
+            <a class="superFontLink" href="https://watch.ahoy.ooo">Watch</a>
 <!-- AHOY PUSH BLOCK TITLE  -->
 <p class="superFont" id="ahoyPushTitle"></p>
 
