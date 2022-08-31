@@ -1,8 +1,9 @@
 <html>
     <head>
-        <title>Radio Ahoy build 1.002</title>
+        <title>Radio Ahoy (Handcode) build 1.003</title>
 
-
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 
 <style>
@@ -13,6 +14,38 @@ body{
         height: 100vh;
         font-family: 'Rubik';font-size: 16px;
     background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
+}
+
+
+
+  .innerBox {
+    background: #05c4dd03;
+    box-shadow: 0px 0px 6px 0px #ff5fac;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.ahoy_ticker {
+  position: fixed;
+  left: 0%;
+  /*top: auto; */
+  right: 0%;
+  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+  bottom: 1.5%;
+  width: 100%;
+  height: 100px;
+    /* OVERFLOW SETTINGS */
+
+  overflow-y: hidden;
+  background-color: #000000;
+  outline-color: #3087ff;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 5px;
+  text-align:center;
+  color:white;
 }
 
 .ahoyRadioContainer {
@@ -47,10 +80,6 @@ body{
     text-align: center;
 
 }
-
-
-
-
 
 .ahoy_ticker {
   position: fixed;
@@ -175,6 +204,58 @@ img:hover {
 }
 
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+  }
+
+  .ahoy_ticker {
+  position: fixed;
+  left: 0%;
+  /*top: auto; */
+  right: 0%;
+  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+  bottom: 25.5%;
+  width: 100%;
+  height: 100px;
+    /* OVERFLOW SETTINGS */
+
+  overflow-y: hidden;
+  background-color: #ff9696;
+  outline-color: #FFFFBC;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 1px;
+  text-align:center;
+  color:white;
+}
+
+   /*-- Outer Box CSS --*/
+   .outerBox {
+    height: 60vh;
+    background: #00000000;
+    padding: 0 20px;
+    margin: 50px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/*-- Inner Box CSS --*/
+.innerBox {
+    background: #05c4dd03;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+}
+
+
 </style>      
 
 
@@ -254,7 +335,7 @@ img:hover {
             
 <br>
         
-            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 2.0.1 <br>
+            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 1.0.3 <br>
             <a class="superFontLink" href="https://watch.ahoy.ooo">Watch</a>
 <!-- AHOY PUSH BLOCK TITLE  -->
 <p class="superFont" id="ahoyPushTitle"></p>
