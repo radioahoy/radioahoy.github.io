@@ -18,15 +18,7 @@ body{
 
 
 
-  .innerBox {
-    background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #ff5fac;
-    border-radius: 10px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
 
-}
 .ahoy_ticker {
   position: fixed;
   left: 0%;
@@ -204,7 +196,24 @@ img:hover {
 }
 
 
+.superFont {
+    font-weight: 300;
+    font-size: 12px;
+    font-family: rubik;
+    color:rgba(250, 250, 250, 0.219);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    border: 1px;
+    border-color:white;
+
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+
   body {
     background-color: lightblue;
     background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
@@ -229,6 +238,7 @@ img:hover {
   outline-width: 1px;
   text-align:center;
   color:white;
+  size: 12px;
 }
 
    /*-- Outer Box CSS --*/
@@ -240,18 +250,33 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    box-shadow: 0px 0px 6px 0px #ffafaf00;
+    border-radius: 5px;
 }
 
 /*-- Inner Box CSS --*/
 .innerBox {
     background: #05c4dd03;
+    box-shadow: 0px 0px 6px 0px #e72eff;
+    border-radius: 10px;
     padding: 30px;
     font-size: 20px;
     text-align: center;
 
 }
 
+.superFont {
+    font-weight: 300;
+    font-size: 12px;
+    font-family: rubik;
+    color:rgba(255, 255, 255, 0.219);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    border: 1px;
+    border-color:white;
+
+}
 
 }
 
@@ -335,7 +360,7 @@ img:hover {
             
 <br>
         
-            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 1.0.3 <br>
+            <span id="spanTITLE"> Live </span> Self-Contained App Build - 1.0.3 <br>
             <a class="superFontLink" href="https://watch.ahoy.ooo">Watch</a>
 <!-- AHOY PUSH BLOCK TITLE  -->
 <p class="superFont" id="ahoyPushTitle"></p>
