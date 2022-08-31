@@ -16,7 +16,32 @@ body{
     background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
 }
 
+button {
+    background-color:#000000;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:40px;
+    background: transparent;
+    border: none;
 
+
+}
+
+button:hover {
+    background-color:#4f4f4f;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:40px;
+    border: none;
+
+
+}
 
 
 .ahoy_ticker {
@@ -118,16 +143,17 @@ body{
         }
 
         .ahoyTickerColTIME {
-            background-color: #0B030C;
+            background-color: #cc43df;
           float: left;
           min-height: 100%;
           width: 25%;
           padding-top: 10px;
-          padding-bottom: 20px;
           font-family: "rubik";
-          text-align: right;
           left: 50%;
-            top: 50%;
+            top: 20%;
+            vertical-align: top;
+            display: inline-block;
+
 
 
         }
@@ -278,6 +304,19 @@ img:hover {
 
 }
 
+.imgAhoyLogo {
+  border: 11px solid rgba(221, 221, 221, 0.016);
+  border-radius: 4px;
+  padding: 5px;
+  width: auto;
+  height: 30px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
 }
 
 
@@ -360,13 +399,15 @@ img:hover {
             
 <br>
         
-            <span id="spanTITLE"> Live </span> Self-Contained App Build - 1.0.3 <br>
-            <a class="superFontLink" href="https://watch.ahoy.ooo">Watch</a>
+            <span id="spanTITLE"> Live </span> Ahoy Radio - build 1.0.3 <br>
+            <button onclick="location.href='http://app.ahoy.ooo'">Menu</button>
+            <button onclick="location.href='http://watch.ahoy.ooo'">Watch</button>
+            <button onclick="location.href='http://radio.ahoy.ooo'">Radio</button>
+            <button onclick="location.href='http://eth.ahoy.ooo'">Eth</button>
 <!-- AHOY PUSH BLOCK TITLE  -->
 <p class="superFont" id="ahoyPushTitle"></p>
 
 <br>
-
 
 <div id="myDiv" style="height:500px height:500px"></div>
 <script>
@@ -375,13 +416,8 @@ function changeAhoyTickerDolor() {
     document.getElementById("ahoy_ticker").style.background-color = "#ccc";
     document.getElementById("myDIV").style.backgroundColor = "lightblue";
 
-
-
 }
 </script>
-
-
-
 
         </div>
 
@@ -414,7 +450,6 @@ function changeAhoyTickerDolor() {
 <div class="ahoyTickerColTIME">
 <!-- AHOY PUSH TIME  -->
     <p class="superFont" id="ahoyPushTime"></p>
-
 <!-- TIME DISPLAY -->
 <!-- TIME DISPLAY -->
     <span id="span"></span>
