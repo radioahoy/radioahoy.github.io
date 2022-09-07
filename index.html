@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Radio Ahoy | 1004</title>
+        <title>Radio Ahoy | 1006b</title>
 
         <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:title" content="Ahoy Indie Radio">
         <meta property="og:type" content="app" />
         <meta property="og:description" content="24/7 Free - Hand Crafted - Indie Media">
@@ -12,6 +12,14 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+html {
+    position: relative;
+    min-width: 1024px;
+    min-height: 576px;
+
+}
 
 body{
   background-size: cover;
@@ -96,74 +104,64 @@ button:hover {
 
 }
 
-.ahoy_ticker {
-  position: fixed;
-  left: 0%;
+  /* AHOY TICKER STYLE  */
+
+
+  .ahoy_ticker {
+    position: fixed;
+
+  left: 1%;
   /*top: auto; */
-  right: 0%;
+  right: 1%;
   /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
   bottom: 1.5%;
-  width: 100%;
-  height: 100px;
+  width: 98%;
+  height: 90px;
     /* OVERFLOW SETTINGS */
-
+overflow:none;
   overflow-y: hidden;
-  background-color: #00000000;
-  outline-color: #bcfff8;
+  background-color: #0b030c97; 
+  outline-color: #FFFFBC;
   outline-offset: 0px;
   outline-style: solid;
   outline-width: 1px;
-  text-align:center;
-  color:white;
-}
+  vertical-align: auto;
 
+}
  /* Create three equal columns that floats next to each other */
  .ahoyTickerCol {
           float: left;
-          width: 20%;
-         min-height:100%;
-          padding: 10px;
-          background-color: #0b030c2c;
+          width: 25%;
+             min-height:100%;
+          padding: 5px;
+
+          max-width: 25%;
+
 
         }
+ 
+
 
         .ahoyTickerColMIDDLE {
           float: left;
-          width: 50%;
+          width: 49%;
           min-height: 100%;
           padding: 10px;
           font-family: "Rubik";
           text-align:center;
-          background-color: #0b030c2c;
-          color:white;
+
 
 
         }
         .ahoyTickerColTIME {
-            background-color: #0b030c2c;
-          float: left;
-          min-height: 100%;
-          width: 25%;
-          font-family: "rubik";
-          left: 50%;
-            text-align: center;
-vertical-align: middle;
-line-height: 100px;       /* The same as your div height */
 
 
-
-        }
-
-        .ahoyTickerColWrap
-        {
-            width: 100%;
-  align-items: center;
-  justify-content: center;
+float:right;
+width: 20%;
+min-height: 100%;
+text-align:right;
+padding:10px;
 }
-        .ayeTitle {
-            font-weight:500;
-            font-size:16px;
-        }
 
         
 
@@ -171,8 +169,11 @@ line-height: 100px;       /* The same as your div height */
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
   padding: 5px;
-  width: auto;
-  height: 50px;
+  margin-right: 10px;
+  width: 100px;
+  height:auto;
+  float:left;
+
 }
 
 img:hover {
@@ -233,37 +234,7 @@ img:hover {
 
 
 
-@media only screen and (max-width: 600px) {
 
-
-  body {
-    background-color: lightblue;
-    background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
-  }
-
-  .ahoy_ticker {
-  position: fixed;
-  left: 0%;
-  /*top: auto; */
-  right: 0%;
-  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-  bottom: 18.5%;
-  width: 100%;
-  height: 120px;
-    /* OVERFLOW SETTINGS */
-
-  overflow-y: hidden;
-  background-color: #ff969600;
-  outline-color: #ff25fb;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 1.5px;
-  text-align:center;
-  color:white;
-  size: 10px;
-  vertical-align: middle;
-
-}
 
    /*-- Outer Box CSS --*/
    .outerBox {
@@ -314,68 +285,115 @@ img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
- /* Create three equal columns that floats next to each other */
- .ahoyTickerCol {
-          float: left;
-          width: 20%;
-         min-height:100%;
-          padding: 10px;
-          background-color: #0B030C;
-
-        }
-
-        .ahoyTickerColMIDDLE {
-          float: left;
-          width: 50%;
-          min-height: 100%;
-          padding: 10px;
-          font-family: "Rubik";
-          text-align:center;
-          background-color: #0B030C;
-          color:white;
-
-
-        }
 
 
 
-        .ahoyTickerColWrap
-        {
-            width: 100%;
-  align-items: center;
-  justify-content: center;
+
+
+        @media only screen and (max-width: 600px) {
+
+
+body {
+  background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
 }
 
 
-.ahoyTickerColTIME {
-            background-color: #0b030c2c;
-          float: left;
-          min-height: 100%;
-          width: 25%;
-          font-family: "rubik";
-          left: 50%;
-            text-align: center;
+
+.ahoyTickerColMIDDLE {
+        float: left;
+        width: 20%;
+        min-height: 100%;
+        padding: 10px;
+        font-family: "Rubik";
+        text-align:center;
+        background-color: #0b030c97; 
+
+      }
+
+
+.ahoy_ticker {
+
+position: fixed;
+left: 0%;
+/*top: auto; */
+right: 0%;
+/* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+bottom: 18.5%;
+width: 100%;
+height: 120px;
+  /* OVERFLOW SETTINGS */
+
+overflow-y: hidden;
+outline-color: #ff25fb;
+outline-offset: 0px;
+outline-style: solid;
+outline-width: 1.5px;
+text-align:center;
+color:white;
+size: 10px;
 vertical-align: middle;
-line-height: 100px;       /* The same as your div height */
 
-
-
+}
         }
 
+        #tickerRightMain {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+
+}
+
+#tickerRightMain div {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+
+}
+
+.superMenuRightText {
+background-color:blue;
+height:auto;
+width:100%;
+text-align:center;
+} 
 
 
+
+.activeButton {
+    background-color:#ff0ddb00;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+    border:1px;
+    border-color: wheat;
+    box-shadow: 0px 0px 6px 0px #e72eff;
+    border-radius: 5px;
 
 
 }
 
+.superFontTime {
+    color:white;
+   
+}
 
 </style>      
 
-
-
-
-
     </head>
+
+
+
+
+
     <body>
 
 
@@ -394,9 +412,7 @@ line-height: 100px;       /* The same as your div height */
 
 
 <!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
+
 <!-- THE AHOY TICKER-->
 <!-- THE AHOY TICKER-->
 
@@ -415,6 +431,7 @@ line-height: 100px;       /* The same as your div height */
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
+
             <a target="_blank" href="https://ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
@@ -422,7 +439,6 @@ line-height: 100px;       /* The same as your div height */
 
 
 
-
         </div>
 
 
@@ -442,32 +458,14 @@ line-height: 100px;       /* The same as your div height */
 <!-- COLUMN 2 -->
 
 
-                <!-- COLUMN 2 -->
+<!-- COLUMN 2 -->
 
-        <div class="ahoyTickerColMIDDLE">
-            
-<br>
-        
-            <span id="spanTITLE"> Live </span> Ahoy Radio - build 1.0.4 <br>
-            <button onclick="location.href='http://ahoy.ooo'">Menu</button>
-            <button onclick="location.href='http://watch.ahoy.ooo'">Watch</button>
-            <button onclick="location.href='http://radio.ahoy.ooo'">Radio</button>
-<!-- AHOY PUSH BLOCK TITLE  -->
-<p class="superFont" id="ahoyPushTitle"></p>
+<div class="ahoyTickerColMIDDLE">
 
-<br>
 
-<div id="myDiv" style="height:500px height:500px"></div>
-<script>
 
-function changeAhoyTickerDolor() {
-    document.getElementById("ahoy_ticker").style.background-color = "#ccc";
-    document.getElementById("myDIV").style.backgroundColor = "lightblue";
+</div>
 
-}
-</script>
-
-        </div>
 
 
 
@@ -477,34 +475,39 @@ function changeAhoyTickerDolor() {
           <!-- END OF COLUMN 2 -->
            <!-- END OF COLUMN 2 -->
             <!-- END OF COLUMN 2 -->
-             <!-- END OF COLUMN 2 -->
+ <!-- END OF COLUMN 2 -->
 
 
 
-
-
-
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
 
+<!-- COLUMN 3 -->
+
+
+<!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
 
-<!-- TIME DISPLAY -->
-<!-- TIME DISPLAY -->
-    <span id="span"></span>
+
+    <!-- AHOY RIGHT MENU -->
+<!-- AHOY RIGHT MENU -->
+
+    <div class="watchMenuRight">
+    <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
+        <button class="button" onclick="location.href='#'">Watch</button>
+    <button class="activeButton" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+</div>
+<!-- AHOY RIGHT MENU -->
+
+<!-- LIVE CLOCK CODE --><br>
+<span class="superFontTime" id="span"></span>
+
  <!-- END OF TIME DISPLAY -->
   <!-- END OF TIME DISPLAY -->
 
+
             
-<!-- LIVE CLOCK -->
+<!-- LIVE CLOCK CODE -->
 <script>
 var span = document.getElementById('span');
 
@@ -519,27 +522,9 @@ function time() {
 
 setInterval(time, 1000);
 </script>
+<!-- COL3 LINE 2 -->
+<!-- COL3 LINE 3 -->
 
-
-<script>
-    var span = document.getElementById('span');
-    
-    function time() {
-      var d = new Date();
-      var s = d.getSeconds();
-      var m = d.getMinutes();
-      var h = d.getHours();
-      span.textContent = 
-        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-    }
-    
-    setInterval(time, 1000);
-    </script>
-    
-
-
-
-</div>
 
 <!-- END OF TICKER -->
 <!-- END OF TICKER -->
