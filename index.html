@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Radio Ahoy | 1006b</title>
+        <title>Radio Ahoy | 1007a</title>
 
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -10,6 +10,16 @@
         <meta property="og:image" content="#">
         <meta name="twitter:card" content="#">
 
+        <!--Lyctics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVDL9N1HDT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WVDL9N1HDT');
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
@@ -386,6 +396,37 @@ text-align:center;
    
 }
 
+.buttonTickerNavSmall { 
+    background-color: rgba(245, 222, 179, 0.006);
+    
+}
+
+.buttonTickerNavSmall:hover { 
+    background-color: rgba(245, 222, 179, 0);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  
+}
+
+.buttonTickerNavSmall:active { 
+    background-color: rgba(245, 222, 179, 0);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  
+}
+.buttonTickerNavSmall:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+
+.buttonFullScreen {
+    background-color: #0000004b;
+}
+
+.buttonFullScreen:hover { 
+    background-color: rgba(255, 255, 255, 0.877);
+  transform: translateY(-1px);
+  color:rgba(0, 0, 0, 0.476);
+}
+
 </style>      
 
     </head>
@@ -492,10 +533,11 @@ text-align:center;
     <!-- AHOY RIGHT MENU -->
 <!-- AHOY RIGHT MENU -->
 
-    <div class="watchMenuRight">
-    <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
-        <button class="button" onclick="location.href='#'">Watch</button>
-    <button class="activeButton" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+<div class="watchMenuRight">
+    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo'">Menu</button>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <button class="buttonFullScreen" onclick="openFullscreen();">Fullscreen Mode</button>
 </div>
 <!-- AHOY RIGHT MENU -->
 
