@@ -1,7 +1,6 @@
 <html>
     <head>
-        <title>Radio Ahoy | 1007a</title>
-
+        <title>Radio Ahoy | 1008_2</title>
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:title" content="Ahoy Indie Radio">
@@ -22,6 +21,9 @@
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/*STARTUP CSS */
+.MOBILEmenuMENU {display:none;}
 
 
 html {
@@ -60,6 +62,30 @@ button {
     border: none;
     cursor: pointer;
     margin: 1px;
+
+}
+
+   /*-- Outer Box CSS --*/
+   .outerBox {
+    height: 60vh;
+    background: #00000000;
+    padding: 0 20px;
+    margin: 50px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #ffafaf00;
+    border-radius: 5px;
+}
+
+/*-- Inner Box CSS --*/
+.innerBox {
+    background: #05c4dd03;
+    box-shadow: 0px 0px 6px 0px #e72eff;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
 
 }
 
@@ -246,29 +272,7 @@ img:hover {
 
 
 
-   /*-- Outer Box CSS --*/
-   .outerBox {
-    height: 60vh;
-    background: #00000000;
-    padding: 0 20px;
-    margin: 50px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #ffafaf00;
-    border-radius: 5px;
-}
 
-/*-- Inner Box CSS --*/
-.innerBox {
-    background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #e72eff;
-    border-radius: 10px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-
-}
 
 .superFont {
     font-weight: 300;
@@ -296,106 +300,6 @@ img:hover {
 }
 
 
-
-
-
-
-        @media only screen and (max-width: 600px) {
-
-
-body {
-  background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
-}
-
-
-
-.ahoyTickerColMIDDLE {
-        float: left;
-        width: 20%;
-        min-height: 100%;
-        padding: 10px;
-        font-family: "Rubik";
-        text-align:center;
-        background-color: #0b030c97; 
-
-      }
-
-
-.ahoy_ticker {
-
-position: fixed;
-left: 0%;
-/*top: auto; */
-right: 0%;
-/* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-bottom: 18.5%;
-width: 100%;
-height: 120px;
-  /* OVERFLOW SETTINGS */
-
-overflow-y: hidden;
-outline-color: #ff25fb;
-outline-offset: 0px;
-outline-style: solid;
-outline-width: 1.5px;
-text-align:center;
-color:white;
-size: 10px;
-vertical-align: middle;
-
-}
-        }
-
-        #tickerRightMain {
-  width: 220px;
-  height: 300px;
-  border: 1px solid black; 
-  display: flex;
-  align-items: flex-start;
-  position: absolute;
-
-}
-
-#tickerRightMain div {
-  flex: 1;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-
-}
-
-.superMenuRightText {
-background-color:blue;
-height:auto;
-width:100%;
-text-align:center;
-} 
-
-
-
-.activeButton {
-    background-color:#ff0ddb00;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    border: none;
-    cursor:pointer;
-    border:1px;
-    border-color: wheat;
-    box-shadow: 0px 0px 6px 0px #e72eff;
-    border-radius: 5px;
-
-
-}
-
-.superFontTime {
-    color:white;
-   
-}
-
 .buttonTickerNavSmall { 
     background-color: rgba(245, 222, 179, 0.006);
     
@@ -417,15 +321,102 @@ text-align:center;
 }
 
 
-.buttonFullScreen {
-    background-color: #0000004b;
+/*Modular Mobile Menu Import from build103 */
+/*AHOY MOBILE TICKER STYLE */
+
+@media only screen and (max-width: 600px) {
+    .MOBILEmenuMENU {display:block;}
 }
 
-.buttonFullScreen:hover { 
-    background-color: rgba(255, 255, 255, 0.877);
-  transform: translateY(-1px);
-  color:rgba(0, 0, 0, 0.476);
+
+
+@media only screen and (max-width: 600px) {
+
+    .MOBILEmenuMENU {
+    display: block;
+    background-color: #faffcb10;
+    min-width:80%;
+    max-width: 350px;
+    min-height:275px;
+    max-height:275px;
+    position:absolute;
+    z-index: 999;
+    top: 82.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  border-style:solid;
+  border-width: .25em;
+  box-shadow: 0px 0px 6px 0px #8d0050;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .buttonMOBILEa {
+    background-color: rgba(38, 0, 255, 0.026);
+    min-width: 95%;
+    min-height:50px;
+    border-style: solid;
+    border-width: .15em;
+    border-color:#ffffff4c;
+
+    margin: 5px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-size:12px;
+    }  
+
+    .buttonMOBILEa:hover {
+    background-color: rgba(38, 0, 255, 0.141);
+    min-width: 95%;
+    min-height:50px;
+    border-style: solid;
+    border-width: .25em;
+    border-color:#ffffff;
+    margin: 5px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .ahoy_ticker { display:none; }
+    .ahoyTickerCol { display:none;}
+    .ahoyTickerColMIDDLE {display:none;}
+    .ahoyTickerColTIME {display:none;}
+
+
+    #ahoyMobileTicker {
+        display: block;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+html {
+    position: relative;
+    min-width: auto;
+    min-height: auto;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .innerBox {
+        min-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+        body { background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+        }
+
+    }
+
 
 </style>      
 
@@ -436,6 +427,7 @@ text-align:center;
 
 
     <body>
+
 
 
 <section>
@@ -450,6 +442,21 @@ text-align:center;
 
 
 </section>
+
+<!-- AHOY MOBILE TICKER - BUILD 1001 -->
+
+
+<div class="MOBILEmenuMENU">
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo'">Menu</button> 
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule">Schedule</button>
+    
+ </div>
+ 
+ 
+ <!-- END OF MOBILE TICKER -->
+ 
 
 
 <!-- THE AHOY TICKER-->
@@ -534,10 +541,12 @@ text-align:center;
 <!-- AHOY RIGHT MENU -->
 
 <div class="watchMenuRight">
-    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo'">Menu</button>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo'">Menu</button>  
     <button class="buttonTickerNavSmall" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
     <button class="buttonTickerNavSmall" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-   </div>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo/schedule">Schedule</button>
+    
+</div>
 <!-- AHOY RIGHT MENU -->
 
 <!-- LIVE CLOCK CODE --><br>
