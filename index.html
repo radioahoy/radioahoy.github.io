@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Radio Ahoy | 1009c</title>
+        <title>Ahoy Indie Radio | Real Radio from Real Indie Folks | 24/7 baby </title>
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:title" content="Ahoy Indie Radio">
@@ -28,16 +28,16 @@
 
 html {
     position: relative;
-    min-width: 1024px;
-    min-height: 576px;
+    /*min-width: 1024px;
+    min-height: 576px;*/
 
 }
 
 body{
-  background-size: cover;
+  background-size:contain;
   
   background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
-  background-blend-mode: lighten;
+ /* background-blend-mode: lighten; */
         height: 95%;
         font-family: 'Rubik';font-size: 16px;
 
@@ -77,15 +77,18 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 6px 0px #ffffff00;
     border-radius: 5px;
-    transform: scale(0.85);
+    border-style:solid;
+    border-width:.2px;
+    border-color:rgba(0, 255, 255, 0.66);
+    padding-bottom:20px;
+    transform: scale(1);
 }
 
 /*-- Inner Box CSS --*/
 .innerBox {
     background: #05c4dd03;
-    box-shadow: 0px 0px 6px 0px #ffffff;
+    box-shadow: 0px 0px 6px 0px aqua; 
     border-radius: 10px;
     padding: 30px;
     font-size: 20px;
@@ -324,7 +327,7 @@ img:hover {
 .MOBILEmenuMENU {
 display: block;
 background-color: #faffcb10;
-min-width:70%;
+min-width:80%;
 max-width: 320px;
 min-height:auto;
 max-height:200px;
@@ -346,8 +349,8 @@ padding-bottom:15px;
 
 .buttonMOBILEa {
 background-color: rgba(38, 0, 255, 0.026);
-min-width: 95%;
-min-height:30px;
+min-width: 100%;
+min-height:42.5px;
 border-style: solid;
 border-width: .15em;
 border-color:#000000;
@@ -356,13 +359,13 @@ transform: scale(0.8);
 
 color:rgb(255, 255, 255);
 text-align:center;
-font-size:12px;
+font-size:14px;
 }  
 
 .buttonMOBILEa:hover {
 background-color: rgba(38, 0, 255, 0.141);
-min-width: 95%;
-min-height:30px;
+min-width: 100%;
+min-height:42.5px;
 border-style: solid;
 border-width: .25em;
 border-color:#ffffff;
@@ -408,16 +411,18 @@ html {
 
 }
 
-@media only screen and (max-width: 600px) 
+/*@media only screen and (max-width: 600px) 
 {
     body {
     background-image: url('https://i.gifer.com/6jul.gif');
-    background-size: cover;
+    background-size: contain;
     background-position: 35% -20%;
     padding:0px;
 
     }
-}
+}*/
+
+
 
 .superFontTime {color:white;}
 
@@ -435,9 +440,9 @@ html {
 
 <section>
 
-    <div class="outerBox">
-        <div class="innerBox"><script src="https://embed.radio.co/player/142a6d9.js"></script>
-        </div>
+    <div class="outerBox"><script src="https://embed.radio.co/player/142a6d9.js"></script>
+       <!-- <div class="innerBox">
+        </div>-->
 
     </div>
 
@@ -452,7 +457,7 @@ html {
     <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo'">Menu</button> 
     <br> <button class="buttonMOBILEa" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
     <br> <button class="buttonMOBILEa" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule.html">Schedule</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule.html'">Schedule</button>
     
  </div>
  
@@ -540,7 +545,7 @@ html {
     <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo'">Menu</button>  
     <button class="buttonTickerNavSmall" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
     <button class="buttonTickerNavSmall" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo/schedule.html">Schedule</button>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo/schedule.html'">Schedule</button>
     
 </div>
 <!-- AHOY RIGHT MENU -->
@@ -590,7 +595,163 @@ setInterval(time, 1000);
 <!-- END OF TICKER -->
 <!-- END OF TICKER -->
 
+<script>
 
+
+    day = new Date()
+    hr = day.getHours()
+
+
+
+    if (hr == 5) {
+  //5am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/FrayedQuaintAnteater-max-1mb.gif')";
+    //Morning Tide//
+    }
+
+    if (hr == 6) {
+  //6am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://www.icegif.com/wp-content/uploads/2022/02/icegif-536.gif')";
+    //Morning Tide//
+    }
+
+    if (hr == 7) {
+  //7am//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/BackLankyGangesdolphin-size_restricted.gif')";
+    //Morning Tide//
+    }
+
+
+    if (hr == 8) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 9) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.makeagif.com/media/9-07-2015/gSknpw.gif')";
+
+    }
+
+    if (hr == 10) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/x-ykFer_yJQAAAAM/equatorialcorals-deepseacorals.gif')";
+
+    }
+
+    if (hr == 11) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.gifer.com/ARqO.gif')";
+  //Shark//
+
+    }
+
+    if (hr == 12) {
+  
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.makeagif.com/media/9-07-2015/gSknpw.gif')";
+
+    }
+
+    if (hr == 13) {
+  //1pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 14) {
+  //2pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g')";
+
+    }
+
+    if (hr == 15) {
+        //3pm//
+        document.body.style.backgroundColor = "#acaca3"; 
+        document.body.style.backgroundImage = "url('https://s.yimg.com/uu/api/res/1.2/rVdUX8eVa31S_5JDCvvp0A--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.storyful.com/866362344b92b1cb1d9c3a36db9b0520')";
+
+    }
+
+    if (hr == 16) {
+        //4pm//
+        document.body.style.backgroundColor = "#acaca3"; 
+        document.body.style.backgroundImage = "url('https://s.yimg.com/uu/api/res/1.2/rVdUX8eVa31S_5JDCvvp0A--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.storyful.com/866362344b92b1cb1d9c3a36db9b0520')";
+
+    }
+
+
+
+    if (hr == 17) {
+  //5pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/S8_V9lNMc3oAAAAM/waves-awesome.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 18) {
+  //6pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://media.tenor.com/S8_V9lNMc3oAAAAM/waves-awesome.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 19) {
+  //7pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://bestanimations.com/media/yachts/627188316sailboat-yacht-sailing-animated-gif-11.gif')";
+    //YachtCU//
+    }
+
+    if (hr == 20) {
+  //8pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/AccomplishedVillainousDrever-size_restricted.gif')";
+    //YachtCU//
+    }
+
+
+    if (hr == 22) {
+  //10pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/c6/36/2e/c6362e4ca5fa5e887c6b9ddfcb82c13d.gif')";
+    //BeachStar//
+    }
+
+
+    if (hr == 23) {
+  //11pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/fc/38/97/fc389789c5fbe80b36df05e8ee441c66.gif')";
+    //Star//
+    }
+
+    if (hr == 24) {
+  //12pm//
+  document.body.style.backgroundColor = "#acaca3"; 
+  document.body.style.backgroundImage = "url('https://c.tenor.com/lWbWfolwJfIAAAAC/ocean-night.gif')";
+    //MidNight _ Star//
+    }
+
+</script>
+
+<script>
+function changeBackground() {
+    document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/FrayedQuaintAnteater-max-1mb.gif')";
+
+}
+</script>
 
     </body>
 </html>
