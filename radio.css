@@ -96,10 +96,10 @@ button:hover {
 
 
 
-  /* AHOY TICKER STYLE  */
+/* AHOY TICKER STYLE  */
 
 
-  .ahoy_ticker {
+.ahoy_ticker {
     position: fixed;
 
   left: 1%;
@@ -110,13 +110,13 @@ button:hover {
   width: 98%;
   height: 90px;
     /* OVERFLOW SETTINGS */
-overflow:none;
+    overflow:none;
   overflow-y: hidden;
-  background-color: #0b030c97; 
+  background-color: #00000077;
   outline-color: #FFFFBC;
   outline-offset: 0px;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: thin;
   vertical-align: auto;
 
 }
@@ -126,46 +126,74 @@ overflow:none;
           width: 25%;
              min-height:100%;
           padding: 5px;
+          background-color: #0b030c97;
           max-width: 25%;
 
 
         }
- 
+        .ahoyTickerCol:hover {
+          float: left;
+          width: 25%;
+         min-height:100%;
+          padding: 5px;
+          background-color: #0b030c97;
+          max-width: 25%;
 
+        }
 
         .ahoyTickerColMIDDLE {
           float: left;
-          width: 49%;
+          width: 20%;
           min-height: 100%;
           padding: 10px;
           font-family: "Rubik";
           text-align:center;
-
+          background-color: #0b030c97; 
 
 
         }
+
+       
+    
         .ahoyTickerColTIME {
+            background-color: #0b030c97;
+          float: left;
+          min-height: 100%;
+          width: 49%;
+          padding-top: 5px;
+          padding-bottom: 20px;
+          font-family: "rubik";
+          text-align: right;
+          left: 50%;
+            top: 50%;
 
 
-float:right;
-width: 20%;
-min-height: 100%;
-text-align:right;
-padding:10px;
-}
+        }
 
-        
+        .ahoyTickerColWrap
+        {
+            width: 100%;
+            align-items: top;
+            text-align:center;
+         }
+
+        .ayeTitle {
+            font-weight:500;
+            font-size:14px;
+        }
 
 .imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
-  padding: 5px;
+  padding: 2.5px;
   margin-right: 10px;
   width: 100px;
   height:auto;
   float:left;
 
 }
+
+  /* END OF AHOY TICKER STYLE  */
 
 
 #spanTITLE
@@ -414,3 +442,19 @@ p {
     padding:0px;
 }
 */
+
+
+.activeButton {
+    background-color:#ff4797;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+    border:1px;
+    border-color: wheat;
+
+}
